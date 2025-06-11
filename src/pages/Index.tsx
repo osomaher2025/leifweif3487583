@@ -1,11 +1,14 @@
 
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Index = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
-    // Redirect to the main portfolio HTML file
-    window.location.href = '/';
-  }, []);
+    // Redirect to the home page
+    navigate('/', { replace: true });
+  }, [navigate]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 to-blue-600">
