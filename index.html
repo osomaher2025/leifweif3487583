@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,74 +56,103 @@
         <!-- Hero Section -->
         <section class="hero-section">
           <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center min-vh-100">
               <div class="col-lg-6 hero-content">
-                <h1 class="display-3 fw-bold text-white mb-4">
+                <h1 class="display-2 fw-bold text-white mb-4 animate__animated animate__fadeInUp">
                   Senior Web Developer
                 </h1>
-                <p class="lead text-white mb-5">
+                <p class="lead text-white mb-5 fs-4 opacity-90">
                   Crafting exceptional digital experiences with modern technologies and innovative solutions. 
                   Specializing in full-stack development, UI/UX design, and scalable architecture.
                 </p>
                 <div class="d-flex gap-3 flex-wrap">
-                  <a href="#projects" class="btn-gradient" data-page="projects">View My Work</a>
-                  <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill" data-page="contact">Get In Touch</a>
+                  <a href="#projects" class="btn-gradient px-4 py-3 fs-5" data-page="projects">
+                    <i class="fas fa-rocket me-2"></i>View My Work
+                  </a>
+                  <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fs-5" data-page="contact">
+                    <i class="fas fa-envelope me-2"></i>Get In Touch
+                  </a>
                 </div>
               </div>
               <div class="col-lg-6 text-center">
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=600&fit=crop" 
-                     alt="Web Development" 
-                     class="img-fluid rounded-circle shadow-lg"
-                     style="max-width: 400px;">
+                <div class="position-relative">
+                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=500&fit=crop" 
+                       alt="Web Development" 
+                       class="img-fluid rounded-circle shadow-lg border border-5 border-white"
+                       style="max-width: 400px; filter: brightness(1.1);">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 rounded-circle" 
+                       style="background: linear-gradient(45deg, rgba(217, 70, 239, 0.2), rgba(59, 130, 246, 0.2));"></div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Skills Section -->
-        <section class="section-padding bg-light">
+        <section class="py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto text-center mb-5">
                 <h2 class="display-4 fw-bold gradient-text mb-4">Technical Expertise</h2>
-                <p class="lead text-muted">
+                <p class="lead text-muted fs-5">
                   Leveraging cutting-edge technologies to build robust, scalable, and user-friendly applications
                 </p>
               </div>
             </div>
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm rounded-4">
-                  <div class="card-body text-center p-4">
-                    <div class="gradient-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
-                         style="width: 80px; height: 80px;">
-                      <i class="fas fa-code text-white fs-2"></i>
+                <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                  <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" 
+                         alt="Frontend Development" 
+                         class="card-img-top" 
+                         style="height: 200px; object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" 
+                         style="background: linear-gradient(45deg, rgba(217, 70, 239, 0.8), rgba(59, 130, 246, 0.8));"></div>
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                      <i class="fas fa-code text-white fs-1"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">Frontend Development</h4>
+                  </div>
+                  <div class="card-body text-center p-4">
+                    <h4 class="fw-bold mb-3 gradient-text">Frontend Development</h4>
                     <p class="text-muted">React, Vue.js, Angular, TypeScript, Modern CSS, Responsive Design</p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm rounded-4">
-                  <div class="card-body text-center p-4">
-                    <div class="gradient-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
-                         style="width: 80px; height: 80px;">
-                      <i class="fas fa-server text-white fs-2"></i>
+                <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                  <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=200&fit=crop" 
+                         alt="Backend Development" 
+                         class="card-img-top" 
+                         style="height: 200px; object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" 
+                         style="background: linear-gradient(45deg, rgba(236, 72, 153, 0.8), rgba(99, 102, 241, 0.8));"></div>
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                      <i class="fas fa-server text-white fs-1"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">Backend Development</h4>
+                  </div>
+                  <div class="card-body text-center p-4">
+                    <h4 class="fw-bold mb-3 gradient-text">Backend Development</h4>
                     <p class="text-muted">Node.js, Python, PHP, RESTful APIs, GraphQL, Database Design</p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm rounded-4">
-                  <div class="card-body text-center p-4">
-                    <div class="gradient-accent rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
-                         style="width: 80px; height: 80px;">
-                      <i class="fas fa-cloud text-white fs-2"></i>
+                <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                  <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=200&fit=crop" 
+                         alt="DevOps & Cloud" 
+                         class="card-img-top" 
+                         style="height: 200px; object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" 
+                         style="background: linear-gradient(45deg, rgba(249, 115, 22, 0.8), rgba(139, 92, 246, 0.8));"></div>
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                      <i class="fas fa-cloud text-white fs-1"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">DevOps & Cloud</h4>
+                  </div>
+                  <div class="card-body text-center p-4">
+                    <h4 class="fw-bold mb-3 gradient-text">DevOps & Cloud</h4>
                     <p class="text-muted">AWS, Docker, Kubernetes, CI/CD, Infrastructure as Code</p>
                   </div>
                 </div>
@@ -136,33 +164,35 @@
 
       <!-- Projects Page -->
       <div id="projects" class="page-content" style="display: none;">
-        <section class="section-padding" style="padding-top: 120px;">
+        <section class="py-5" style="padding-top: 120px; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); min-height: 100vh;">
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto text-center mb-5">
                 <h2 class="display-4 fw-bold gradient-text mb-4">Featured Projects</h2>
-                <p class="lead text-muted">
+                <p class="lead text-muted fs-5">
                   A showcase of recent work demonstrating expertise in modern web development
                 </p>
               </div>
             </div>
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
-                <div class="project-card bg-white">
+                <div class="project-card bg-white shadow-lg">
                   <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" 
                        alt="E-commerce Platform" 
                        class="project-image w-100">
                   <div class="p-4">
-                    <h4 class="fw-bold mb-3">E-commerce Platform</h4>
+                    <h4 class="fw-bold mb-3 gradient-text">E-commerce Platform</h4>
                     <p class="text-muted mb-3">
                       Full-stack e-commerce solution with React, Node.js, and payment integration
                     </p>
-                    <div class="d-flex gap-2 mb-3">
-                      <span class="badge bg-primary">React</span>
+                    <div class="d-flex gap-2 mb-3 flex-wrap">
+                      <span class="badge" style="background: linear-gradient(45deg, #d946ef, #3b82f6);">React</span>
                       <span class="badge bg-success">Node.js</span>
-                      <span class="badge bg-warning">MongoDB</span>
+                      <span class="badge bg-warning text-dark">MongoDB</span>
                     </div>
-                    <a href="#" class="btn btn-outline-primary rounded-pill">View Project</a>
+                    <a href="#" class="btn btn-outline-primary rounded-pill px-3">
+                      <i class="fas fa-external-link-alt me-2"></i>View Project
+                    </a>
                   </div>
                 </div>
               </div>
@@ -268,63 +298,69 @@
 
       <!-- Contact Page -->
       <div id="contact" class="page-content" style="display: none;">
-        <section class="contact-section section-padding" style="padding-top: 120px;">
+        <section class="py-5" style="padding-top: 120px; background: linear-gradient(135deg, #d946ef 0%, #3b82f6 100%); min-height: 100vh;">
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto text-center mb-5">
                 <h2 class="display-4 fw-bold text-white mb-4">Let's Work Together</h2>
-                <p class="lead text-white opacity-75">
+                <p class="lead text-white opacity-90 fs-5">
                   Ready to bring your next project to life? Let's discuss how we can create something amazing together.
                 </p>
               </div>
             </div>
-            <div class="row g-5">
+            <div class="row g-5 align-items-center">
               <div class="col-lg-6">
-                <div class="card-gradient p-5 h-100">
-                  <h3 class="text-white fw-bold mb-4">Get In Touch</h3>
+                <div class="card-gradient p-5 h-100 rounded-4">
+                  <div class="text-center mb-4">
+                    <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=300&h=200&fit=crop" 
+                         alt="Contact" 
+                         class="img-fluid rounded-3 mb-4 shadow"
+                         style="max-height: 200px; width: 100%; object-fit: cover;">
+                  </div>
+                  <h3 class="text-white fw-bold mb-4 text-center">Get In Touch</h3>
                   <div class="mb-4">
-                    <div class="d-flex align-items-center mb-3">
+                    <div class="d-flex align-items-center mb-4 p-3 rounded-3" style="background: rgba(255,255,255,0.1);">
                       <div class="gradient-accent rounded-circle d-flex align-items-center justify-content-center me-3" 
-                           style="width: 50px; height: 50px;">
-                        <i class="fas fa-envelope text-white"></i>
+                           style="width: 50px; height: 50px; background: rgba(255,255,255,0.2);">
+                        <i class="fas fa-envelope text-white fs-5"></i>
                       </div>
                       <div>
-                        <h5 class="text-white mb-1">Email</h5>
-                        <p class="text-white opacity-75 mb-0">hello@webdev.com</p>
+                        <h5 class="text-white mb-1 fw-semibold">Email</h5>
+                        <p class="text-white opacity-90 mb-0">hello@webdev.com</p>
                       </div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
+                    <div class="d-flex align-items-center mb-4 p-3 rounded-3" style="background: rgba(255,255,255,0.1);">
                       <div class="gradient-accent rounded-circle d-flex align-items-center justify-content-center me-3" 
-                           style="width: 50px; height: 50px;">
-                        <i class="fas fa-phone text-white"></i>
+                           style="width: 50px; height: 50px; background: rgba(255,255,255,0.2);">
+                        <i class="fas fa-phone text-white fs-5"></i>
                       </div>
                       <div>
-                        <h5 class="text-white mb-1">Phone</h5>
-                        <p class="text-white opacity-75 mb-0">+1 (555) 123-4567</p>
+                        <h5 class="text-white mb-1 fw-semibold">Phone</h5>
+                        <p class="text-white opacity-90 mb-0">+1 (555) 123-4567</p>
                       </div>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center p-3 rounded-3" style="background: rgba(255,255,255,0.1);">
                       <div class="gradient-accent rounded-circle d-flex align-items-center justify-content-center me-3" 
-                           style="width: 50px; height: 50px;">
-                        <i class="fas fa-map-marker-alt text-white"></i>
+                           style="width: 50px; height: 50px; background: rgba(255,255,255,0.2);">
+                        <i class="fas fa-map-marker-alt text-white fs-5"></i>
                       </div>
                       <div>
-                        <h5 class="text-white mb-1">Location</h5>
-                        <p class="text-white opacity-75 mb-0">San Francisco, CA</p>
+                        <h5 class="text-white mb-1 fw-semibold">Location</h5>
+                        <p class="text-white opacity-90 mb-0">San Francisco, CA</p>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex gap-3">
-                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                  <div class="d-flex gap-4 justify-content-center">
+                    <a href="#" class="text-white fs-3 smooth-transition p-2 rounded-circle" style="opacity: 0.9; background: rgba(255,255,255,0.1);">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                    <a href="#" class="text-white fs-3 smooth-transition p-2 rounded-circle" style="opacity: 0.9; background: rgba(255,255,255,0.1);">
                       <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                    <a href="#" class="text-white fs-3 smooth-transition p-2 rounded-circle" style="opacity: 0.9; background: rgba(255,255,255,0.1);">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                    <a href="#" class="text-white fs-3 smooth-transition p-2 rounded-circle" style="opacity: 0.9; background: rgba(255,255,255,0.1);">
                       <i class="fab fa-dribbble"></i>
                     </a>
                   </div>
@@ -332,25 +368,35 @@
               </div>
               <div class="col-lg-6">
                 <div class="bg-white rounded-4 p-5 shadow-lg">
-                  <h3 class="fw-bold mb-4">Send a Message</h3>
+                  <div class="text-center mb-4">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=150&fit=crop" 
+                         alt="Collaboration" 
+                         class="img-fluid rounded-3 shadow-sm"
+                         style="max-height: 150px; width: 100%; object-fit: cover;">
+                  </div>
+                  <h3 class="fw-bold mb-4 gradient-text text-center">Send a Message</h3>
                   <form>
-                    <div class="mb-3">
-                      <label for="name" class="form-label fw-medium">Full Name</label>
-                      <input type="text" class="form-control form-control-lg rounded-3" id="name" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label fw-medium">Email Address</label>
-                      <input type="email" class="form-control form-control-lg rounded-3" id="email" required>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label fw-medium">Full Name</label>
+                        <input type="text" class="form-control form-control-lg rounded-3 border-2" id="name" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label fw-medium">Email Address</label>
+                        <input type="email" class="form-control form-control-lg rounded-3 border-2" id="email" required>
+                      </div>
                     </div>
                     <div class="mb-3">
                       <label for="subject" class="form-label fw-medium">Subject</label>
-                      <input type="text" class="form-control form-control-lg rounded-3" id="subject" required>
+                      <input type="text" class="form-control form-control-lg rounded-3 border-2" id="subject" required>
                     </div>
                     <div class="mb-4">
                       <label for="message" class="form-label fw-medium">Message</label>
-                      <textarea class="form-control rounded-3" id="message" rows="5" required></textarea>
+                      <textarea class="form-control rounded-3 border-2" id="message" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn-gradient w-100">Send Message</button>
+                    <button type="submit" class="btn-gradient w-100 py-3 fs-5">
+                      <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
                   </form>
                 </div>
               </div>
