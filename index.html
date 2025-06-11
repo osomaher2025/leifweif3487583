@@ -1,24 +1,466 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gradient-dream-site</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Senior Web Developer Portfolio</title>
+    <meta name="description" content="Senior Web Developer Portfolio - Creating exceptional digital experiences" />
+    <meta name="author" content="Senior Web Developer" />
 
-    <meta property="og:title" content="gradient-dream-site" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta property="og:title" content="Senior Web Developer Portfolio" />
+    <meta property="og:description" content="Creating exceptional digital experiences" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-gradient">
+      <div class="container">
+        <a class="navbar-brand fw-bold gradient-text fs-3" href="#home">DevPortfolio</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-medium active" href="#home" data-page="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#projects" data-page="projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#contact" data-page="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div id="main-content">
+      <!-- Home Page -->
+      <div id="home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 hero-content">
+                <h1 class="display-3 fw-bold text-white mb-4">
+                  Senior Web Developer
+                </h1>
+                <p class="lead text-white mb-5">
+                  Crafting exceptional digital experiences with modern technologies and innovative solutions. 
+                  Specializing in full-stack development, UI/UX design, and scalable architecture.
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                  <a href="#projects" class="btn-gradient" data-page="projects">View My Work</a>
+                  <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill" data-page="contact">Get In Touch</a>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=600&fit=crop" 
+                     alt="Web Development" 
+                     class="img-fluid rounded-circle shadow-lg"
+                     style="max-width: 400px;">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section-padding bg-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="display-4 fw-bold gradient-text mb-4">Technical Expertise</h2>
+                <p class="lead text-muted">
+                  Leveraging cutting-edge technologies to build robust, scalable, and user-friendly applications
+                </p>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center p-4">
+                    <div class="gradient-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
+                         style="width: 80px; height: 80px;">
+                      <i class="fas fa-code text-white fs-2"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Frontend Development</h4>
+                    <p class="text-muted">React, Vue.js, Angular, TypeScript, Modern CSS, Responsive Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center p-4">
+                    <div class="gradient-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
+                         style="width: 80px; height: 80px;">
+                      <i class="fas fa-server text-white fs-2"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Backend Development</h4>
+                    <p class="text-muted">Node.js, Python, PHP, RESTful APIs, GraphQL, Database Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center p-4">
+                    <div class="gradient-accent rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
+                         style="width: 80px; height: 80px;">
+                      <i class="fas fa-cloud text-white fs-2"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">DevOps & Cloud</h4>
+                    <p class="text-muted">AWS, Docker, Kubernetes, CI/CD, Infrastructure as Code</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Projects Page -->
+      <div id="projects" class="page-content" style="display: none;">
+        <section class="section-padding" style="padding-top: 120px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="display-4 fw-bold gradient-text mb-4">Featured Projects</h2>
+                <p class="lead text-muted">
+                  A showcase of recent work demonstrating expertise in modern web development
+                </p>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="project-card bg-white">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" 
+                       alt="E-commerce Platform" 
+                       class="project-image w-100">
+                  <div class="p-4">
+                    <h4 class="fw-bold mb-3">E-commerce Platform</h4>
+                    <p class="text-muted mb-3">
+                      Full-stack e-commerce solution with React, Node.js, and payment integration
+                    </p>
+                    <div class="d-flex gap-2 mb-3">
+                      <span class="badge bg-primary">React</span>
+                      <span class="badge bg-success">Node.js</span>
+                      <span class="badge bg-warning">MongoDB</span>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary rounded-pill">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="project-card bg-white">
+                  <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" 
+                       alt="Analytics Dashboard" 
+                       class="project-image w-100">
+                  <div class="p-4">
+                    <h4 class="fw-bold mb-3">Analytics Dashboard</h4>
+                    <p class="text-muted mb-3">
+                      Real-time data visualization dashboard with interactive charts and reports
+                    </p>
+                    <div class="d-flex gap-2 mb-3">
+                      <span class="badge bg-info">Vue.js</span>
+                      <span class="badge bg-secondary">Python</span>
+                      <span class="badge bg-danger">Redis</span>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary rounded-pill">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="project-card bg-white">
+                  <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop" 
+                       alt="Mobile App Backend" 
+                       class="project-image w-100">
+                  <div class="p-4">
+                    <h4 class="fw-bold mb-3">Mobile App Backend</h4>
+                    <p class="text-muted mb-3">
+                      Scalable REST API and microservices architecture for mobile applications
+                    </p>
+                    <div class="d-flex gap-2 mb-3">
+                      <span class="badge bg-dark">Express.js</span>
+                      <span class="badge bg-primary">PostgreSQL</span>
+                      <span class="badge bg-warning">Docker</span>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary rounded-pill">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="project-card bg-white">
+                  <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=250&fit=crop" 
+                       alt="Digital Agency Website" 
+                       class="project-image w-100">
+                  <div class="p-4">
+                    <h4 class="fw-bold mb-3">Digital Agency Website</h4>
+                    <p class="text-muted mb-3">
+                      Modern, responsive website with advanced animations and CMS integration
+                    </p>
+                    <div class="d-flex gap-2 mb-3">
+                      <span class="badge bg-success">Vue.js</span>
+                      <span class="badge bg-info">Tailwind</span>
+                      <span class="badge bg-secondary">Headless CMS</span>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary rounded-pill">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="project-card bg-white">
+                  <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop" 
+                       alt="SaaS Application" 
+                       class="project-image w-100">
+                  <div class="p-4">
+                    <h4 class="fw-bold mb-3">SaaS Application</h4>
+                    <p class="text-muted mb-3">
+                      Multi-tenant SaaS platform with subscription management and analytics
+                    </p>
+                    <div class="d-flex gap-2 mb-3">
+                      <span class="badge bg-primary">React</span>
+                      <span class="badge bg-warning">AWS</span>
+                      <span class="badge bg-danger">Stripe</span>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary rounded-pill">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="project-card bg-white">
+                  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" 
+                       alt="API Gateway" 
+                       class="project-image w-100">
+                  <div class="p-4">
+                    <h4 class="fw-bold mb-3">Enterprise API Gateway</h4>
+                    <p class="text-muted mb-3">
+                      High-performance API gateway with rate limiting, authentication, and monitoring
+                    </p>
+                    <div class="d-flex gap-2 mb-3">
+                      <span class="badge bg-dark">Node.js</span>
+                      <span class="badge bg-info">Kubernetes</span>
+                      <span class="badge bg-success">GraphQL</span>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary rounded-pill">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact Page -->
+      <div id="contact" class="page-content" style="display: none;">
+        <section class="contact-section section-padding" style="padding-top: 120px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="display-4 fw-bold text-white mb-4">Let's Work Together</h2>
+                <p class="lead text-white opacity-75">
+                  Ready to bring your next project to life? Let's discuss how we can create something amazing together.
+                </p>
+              </div>
+            </div>
+            <div class="row g-5">
+              <div class="col-lg-6">
+                <div class="card-gradient p-5 h-100">
+                  <h3 class="text-white fw-bold mb-4">Get In Touch</h3>
+                  <div class="mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="gradient-accent rounded-circle d-flex align-items-center justify-content-center me-3" 
+                           style="width: 50px; height: 50px;">
+                        <i class="fas fa-envelope text-white"></i>
+                      </div>
+                      <div>
+                        <h5 class="text-white mb-1">Email</h5>
+                        <p class="text-white opacity-75 mb-0">hello@webdev.com</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="gradient-accent rounded-circle d-flex align-items-center justify-content-center me-3" 
+                           style="width: 50px; height: 50px;">
+                        <i class="fas fa-phone text-white"></i>
+                      </div>
+                      <div>
+                        <h5 class="text-white mb-1">Phone</h5>
+                        <p class="text-white opacity-75 mb-0">+1 (555) 123-4567</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="gradient-accent rounded-circle d-flex align-items-center justify-content-center me-3" 
+                           style="width: 50px; height: 50px;">
+                        <i class="fas fa-map-marker-alt text-white"></i>
+                      </div>
+                      <div>
+                        <h5 class="text-white mb-1">Location</h5>
+                        <p class="text-white opacity-75 mb-0">San Francisco, CA</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white fs-4 smooth-transition" style="opacity: 0.8;">
+                      <i class="fab fa-dribbble"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="bg-white rounded-4 p-5 shadow-lg">
+                  <h3 class="fw-bold mb-4">Send a Message</h3>
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label fw-medium">Full Name</label>
+                      <input type="text" class="form-control form-control-lg rounded-3" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label fw-medium">Email Address</label>
+                      <input type="email" class="form-control form-control-lg rounded-3" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="subject" class="form-label fw-medium">Subject</label>
+                      <input type="text" class="form-control form-control-lg rounded-3" id="subject" required>
+                    </div>
+                    <div class="mb-4">
+                      <label for="message" class="form-label fw-medium">Message</label>
+                      <textarea class="form-control rounded-3" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-gradient w-100">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript for Navigation -->
+    <script>
+      // Page Navigation
+      const navLinks = document.querySelectorAll('[data-page]');
+      const pages = document.querySelectorAll('.page-content');
+      
+      function showPage(pageId) {
+        // Hide all pages
+        pages.forEach(page => {
+          page.style.display = 'none';
+          page.classList.remove('active');
+        });
+        
+        // Show target page
+        const targetPage = document.getElementById(pageId);
+        if (targetPage) {
+          targetPage.style.display = 'block';
+          setTimeout(() => {
+            targetPage.classList.add('active');
+          }, 50);
+        }
+        
+        // Update active nav link
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+        document.querySelector(`[data-page="${pageId}"]`).classList.add('active');
+        
+        // Update URL hash
+        window.location.hash = pageId;
+      }
+      
+      // Handle navigation clicks
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const pageId = link.getAttribute('data-page');
+          showPage(pageId);
+          
+          // Close mobile menu if open
+          const navbarToggler = document.querySelector('.navbar-toggler');
+          const navbarCollapse = document.querySelector('.navbar-collapse');
+          if (navbarCollapse.classList.contains('show')) {
+            navbarToggler.click();
+          }
+        });
+      });
+      
+      // Handle initial page load
+      window.addEventListener('load', () => {
+        const hash = window.location.hash.substring(1);
+        if (hash && document.getElementById(hash)) {
+          showPage(hash);
+        } else {
+          showPage('home');
+        }
+      });
+      
+      // Handle browser back/forward
+      window.addEventListener('hashchange', () => {
+        const hash = window.location.hash.substring(1);
+        if (hash && document.getElementById(hash)) {
+          showPage(hash);
+        }
+      });
+      
+      // Add smooth scrolling and hover effects
+      document.addEventListener('DOMContentLoaded', function() {
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+          } else {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+          }
+        });
+        
+        // Social links hover effect
+        document.querySelectorAll('.contact-section a[href="#"]').forEach(link => {
+          link.addEventListener('mouseenter', function() {
+            this.style.opacity = '1';
+            this.style.transform = 'translateY(-2px)';
+          });
+          
+          link.addEventListener('mouseleave', function() {
+            this.style.opacity = '0.8';
+            this.style.transform = 'translateY(0)';
+          });
+        });
+        
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your message! I will get back to you soon.');
+          this.reset();
+        });
+      });
+    </script>
   </body>
 </html>
